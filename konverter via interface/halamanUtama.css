@@ -1,0 +1,145 @@
+/* ♡♡Thanks Deepseek! for css! */
+
+/* Gaya dasar untuk body */
+body {
+    font-family: 'Quicksand', sans-serif; /* Font menarik dan modern */
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); /* Gradient pastel */
+    color: #2d3748; /* Warna teks agak gelap */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Gaya untuk container utama */
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Latar belakang semi-transparan */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Shadow untuk efek kedalaman */
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek transisi halus */
+}
+
+/* Efek hover pada container */
+.container:hover {
+    transform: translateY(-5px); /* Sedikit mengangkat container */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Shadow lebih besar saat hover */
+}
+
+/* Gaya untuk judul */
+h1 {
+    color: #4a5568; /* Warna judul pastel agak gelap */
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-weight: 600; /* Tebal sedang */
+}
+
+/* Gaya untuk garis pemisah */
+hr {
+    border: 0;
+    height: 1px;
+    background: #cbd5e0; /* Warna garis pastel muda */
+    margin: 20px 0;
+}
+
+/* Gaya untuk sub-judul */
+h2 {
+    color: #4a5568; /* Warna sub-judul pastel agak gelap */
+    font-size: 22px;
+    margin-top: 20px;
+    font-weight: 500; /* Tebal sedang */
+}
+
+/* Gaya untuk list konversi */
+.conversion-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px; /* Jarak antar item */
+    margin-bottom: 20px;
+}
+
+/* Gaya untuk setiap item konversi */
+.conversion-item {
+    background-color: #f7fafc; /* Warna latar item pastel sangat muda */
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #4a5568; /* Warna teks agak gelap */
+    flex: 1 1 calc(50% - 20px); /* 2 kolom dengan jarak */
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Efek transisi halus */
+}
+
+/* Efek hover pada item konversi */
+.conversion-item:hover {
+    background-color: #e2e8f0; /* Warna latar lebih gelap saat hover */
+    transform: translateY(-3px); /* Sedikit mengangkat item */
+}
+
+/* Gaya untuk input */
+input[type="number"] {
+    width: calc(100% - 24px);
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #cbd5e0; /* Warna border pastel muda */
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f7fafc; /* Warna latar input pastel sangat muda */
+    color: #2d3748; /* Warna teks input agak gelap */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Efek transisi halus */
+}
+
+/* Efek hover dan focus pada input */
+input[type="number"]:hover,
+input[type="number"]:focus {
+    border-color: #63b3ed; /* Warna border biru pastel saat hover/focus */
+    box-shadow: 0 0 8px rgba(99, 179, 237, 0.3); /* Shadow biru pastel saat hover/focus */
+    outline: none; /* Menghilangkan outline default */
+}
+
+/* Gaya untuk tombol */
+button {
+    background-color: #63b3ed; /* Warna tombol pastel biru muda */
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Efek transisi halus */
+}
+
+/* Efek hover untuk tombol */
+button:hover {
+    background-color: #4299e1; /* Warna tombol pastel biru lebih gelap saat hover */
+    transform: scale(1.05); /* Sedikit membesar saat hover */
+}
+
+/* Efek aktif untuk tombol */
+button:active {
+    background-color: #3182ce; /* Warna tombol pastel biru lebih gelap saat diklik */
+    transform: scale(0.95); /* Sedikit mengecil saat diklik */
+}
+
+/* Animasi saat halaman dimuat */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    animation: fadeIn 0.8s ease-out; /* Animasi muncul saat halaman dimuat */
+}
