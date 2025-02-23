@@ -1,4 +1,4 @@
- Aplikasi sederhana untuk mengkonversi suhu antara Celsius, Fahrenheit, dan Kelvin.
+- Aplikasi sederhana untuk mengkonversi suhu antara Celsius, Fahrenheit, dan Kelvin.
 
  ## Cara Menggunakan
  1. Masukkan nilai suhu di input yang disediakan.
